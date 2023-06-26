@@ -877,11 +877,11 @@ body.is-DrawerActive .header-Nav {
 	height: 2px;
 	content: "";
 	transition: all .2s ease-in-out;
-	background-color: #00A1C6;
+	background-color: #f9dfd4;
 }
 
 .footer {
-	border-top: 70px solid #00A1C6;
+	border-top: 70px solid #f9dfd4;
 }
 
 .footer-Widgets {
@@ -897,7 +897,7 @@ body.is-DrawerActive .header-Nav {
 .breadCrumb {
 	padding: 10px 15px;
 	color: #FFFFFF;
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	font-size: 0.875rem;
 }
 
@@ -934,13 +934,13 @@ body.is-DrawerActive .header-Nav {
 }
 
 .pagination .page-numbers:hover {
-	border-color: #00A1C6;
+	border-color: #6d3c29;
 }
 
 .pagination .page-numbers.current {
 	color: #FFFFFF;
-	border-color: #00A1C6;
-	background-color: #00A1C6;
+	border-color: #6d3c29;
+	background-color: #6d3c29;
 }
 
 .pagination .page-numbers.dots {
@@ -981,7 +981,7 @@ body.is-DrawerActive .header-Nav {
 
 .module-Article_Item_Title {
 	margin-bottom: .5em;
-	color: #00A1C6;
+	color: #6d3c29;
 	font-size: 1.125rem;
 }
 
@@ -1039,8 +1039,8 @@ ul.module-Article_Item_Meta {
 
 .module-Style_Item_Link:hover .module-Style_Item_Img,
 .module-Style_Item_Link:focus .module-Style_Item_Img {
-	border-color: #00A1C6;
-	outline: 1px solid #00A1C6;
+	border-color: #f9dfd4;
+	outline: 1px solid #f9dfd4;
 }
 
 .module-Style_Item_Title {
@@ -1078,7 +1078,7 @@ ul.module-Article_Item_Meta {
 	padding: 0 .5em;
 	text-decoration: none;
 	color: #3B4043;
-	border: 1px solid #00A1C6;
+	border: 1px solid #6d3c29;
 	border-radius: 0.2em;
 	background-color: #FFFFFF;
 	font-family: "Noto Sans JP", sans-serif, sans-serif;
@@ -1087,7 +1087,7 @@ ul.module-Article_Item_Meta {
 
 .content-Comments .page-numbers.current {
 	color: #FFFFFF;
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 }
 
 .content-Comments .required {
@@ -1128,7 +1128,7 @@ ul.module-Article_Item_Meta {
 }
 
 .content-Comments .logged-in-as a {
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 ol.content-CommentsList {
@@ -1145,7 +1145,7 @@ ol.content-CommentsList {
 }
 
 .comment-body a {
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 .comment-author {
@@ -1218,7 +1218,7 @@ ol.content-CommentsList {
 .widget_block h6 {
 	margin-bottom: 1em;
 	padding-top: .5em;
-	border-top: 2px solid #00A1C6;
+	border-top: 2px solid #f9dfd4;
 	font-size: 1.125rem;
 }
 
@@ -1266,7 +1266,7 @@ ol.content-CommentsList {
 }
 
 .widget_block .wp-block-button__link {
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 .widget_block .wp-block-button__link:hover {
@@ -1314,7 +1314,7 @@ ol.content-CommentsList {
 .sidebar-HairCat_Title {
 	margin-bottom: 1em;
 	padding-top: .5em;
-	border-top: 2px solid #00A1C6;
+	border-top: 2px solid #6d3c29;
 	font-size: 1.125rem;
 }
 
@@ -1378,11 +1378,11 @@ ol.content-CommentsList {
 }
 
 .has-skyblue-background-color {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 }
 
 .has-skyblue-color {
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 .has-light-skyblue-background-color {
@@ -1446,24 +1446,24 @@ ol.content-CommentsList {
 	padding: 1em;
 	display: inline-block;
 	background-color: #FFFFFF;
-	color: #00A1C6;
-	border: 1px solid #00A1C6;
+	color: #6d3c29;
+	border: 1px solid #6d3c29;
 }
 
 .wp-block-button__link:hover,
 .wp-block-button__link:focus,
 .wp-block-button__link:visited {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
 .wp-block-button__link:visited {
-	color: #00A1C6;
+	color: #6d3c29;
 	background-color: #FFFFFF;
 }
 
 .wp-block-button__link:hover {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 	filter: contrast(150%);
 }
@@ -1476,20 +1476,20 @@ ol.content-CommentsList {
 	font-family: "Noto Sans JP", sans-serif;
 	padding: 1em;
 	display: inline-block;
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
 .wp-block-button.is-style-fill .wp-block-button__link:hover,
 .wp-block-button.is-style-fill .wp-block-button__link:focus,
 .wp-block-button.is-style-fill .wp-block-button__link:visited {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
 .wp-block-button.is-style-fixed .wp-block-button__link,
 .wp-block-button.is-style-outline .wp-block-button__link {
-	border: 1px solid #00A1C6;
+	border: 1px solid #6d3c29;
 	padding: 1em;
 }
 
@@ -1497,13 +1497,13 @@ ol.content-CommentsList {
 .wp-block-button.is-style-fixed .wp-block-button__link:focus,
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
 .wp-block-button.is-style-outline .wp-block-button__link:focus {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 	filter: contrast(100%);
 }
 
 .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color) {
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover,
@@ -1514,7 +1514,7 @@ ol.content-CommentsList {
 .wp-block-button.is-style-arrow .wp-block-button__link {
 	display: flex;
 	align-items: center;
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
@@ -1620,15 +1620,15 @@ ul.wp-block-social-links a {
 	margin-bottom: .5em;
 	padding: .3em .7em;
 	text-decoration: none;
-	color: #00A1C6;
-	border: 1px solid #00A1C6;
+	color: #6d3c29;
+	border: 1px solid #6d3c29;
 	border-radius: 1em;
 }
 
 .wp-block-tag-cloud a.tag-cloud-link:hover,
 .wp-block-tag-cloud a.tag-cloud-link:focus {
 	color: #FFFFFF;
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 }
 
 .wp-block-archives-list.wp-block-archives {
@@ -1723,7 +1723,7 @@ ul.wp-block-social-links a {
 
 .wp-block-calendar table tbody a {
 	font-weight: bold;
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 .wp-calendar-nav {
@@ -1813,7 +1813,7 @@ ul.wp-block-social-links a {
 .home-ShopInfo_Title span {
 	display: block;
 	margin-top: .5em;
-	color: #00A1C6;
+	color: #6d3c29;
 	font-size: 0.75rem;
 }
 
@@ -1831,8 +1831,8 @@ ul.wp-block-social-links a {
 	padding: 1em;
 	display: inline-block;
 	background-color: #FFFFFF;
-	color: #00A1C6;
-	border: 1px solid #00A1C6;
+	color: #6d3c29;
+	border: 1px solid #6d3c29;
 	width: 100%;
 	max-width: 20em;
 }
@@ -1840,7 +1840,7 @@ ul.wp-block-social-links a {
 .home-News_More_Link:hover,
 .home-News_More_Link:focus,
 .home-News_More_Link:visited {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
@@ -1866,8 +1866,8 @@ ul.wp-block-social-links a {
 	padding: 1em;
 	display: inline-block;
 	background-color: #FFFFFF;
-	color: #00A1C6;
-	border: 1px solid #00A1C6;
+	color: #6d3c29;
+	border: 1px solid #6d3c29;
 	width: 100%;
 	max-width: 20em;
 }
@@ -1875,7 +1875,7 @@ ul.wp-block-social-links a {
 .home-Style_More_Link:hover,
 .home-Style_More_Link:focus,
 .home-Style_More_Link:visited {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
@@ -1901,8 +1901,8 @@ ul.wp-block-social-links a {
 	padding: 1em;
 	display: inline-block;
 	background-color: #FFFFFF;
-	color: #00A1C6;
-	border: 1px solid #00A1C6;
+	color: #6d3c29;
+	border: 1px solid #6d3c29;
 	width: 100%;
 	max-width: 20em;
 }
@@ -1910,7 +1910,7 @@ ul.wp-block-social-links a {
 .home-ShopInfo_Reservation_Link:hover,
 .home-ShopInfo_Reservation_Link:focus,
 .home-ShopInfo_Reservation_Link:visited {
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	color: #FFFFFF;
 }
 
@@ -1922,7 +1922,7 @@ ul.wp-block-social-links a {
 .home-SubTitle {
 	display: block;
 	margin-top: 0.5em;
-	color: #00A1C6;
+	color: #6d3c29;
 	font-size: 0.75rem;
 }
 
@@ -1945,7 +1945,7 @@ ul.wp-block-social-links a {
 	display: block;
 	width: 12em;
 	text-align: center;
-	background-color: #00A1C6;
+	background-color: #6d3c29;
 	margin-bottom: 0.3em;
 	font-size: 0.875rem;
 }
@@ -2026,7 +2026,7 @@ ul.wp-block-social-links a {
 }
 
 .content-Body a {
-	color: #00A1C6;
+	color: #6d3c29;
 }
 
 .content-Footer {
@@ -2052,8 +2052,8 @@ ul.content-Tags {
 	display: block;
 	padding: .3em .7em;
 	text-decoration: none;
-	color: #00A1C6;
-	border: 1px solid #00A1C6;
+	color: #6d3c29;
+	border: 1px solid #6d3c29;
 	border-radius: 1em;
 }
 
