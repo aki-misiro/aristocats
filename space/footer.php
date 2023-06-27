@@ -49,7 +49,7 @@
             </div>
          </div>
          <p class="footer-Copyright">
-            <small>&copy; 2021 Kuroneko Hair Sample </small>
+            <small>&copy;&nbsp;&nbsp;The Aristocats&nbsp;&nbsp;All rights reserved</small>
          </p>
       </footer>
    </div>
