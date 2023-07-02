@@ -5,84 +5,46 @@
                     <main class="main">
                         <header class="content-Header">
                             <h1 class="content-Title">
-                                お知らせ
+                                <?php if ( is_month() ): ?>
+                                    <?php echo get_the_date( 'Y年n月' ); ?>
+                                <?php else: ?>
+                                    <?php single_term_title(); ?>
+                                <?php endif; ?>
                             </h1>
                         </header>
-                        <article class="module-Article_Item">
-                            <a href="#" class="module-Article_Item_Link">
+                        <?php if( have_posts() ) :?>
+                            <?php
+                            while ( have_posts() ) :
+                                the_post();
+                                ?>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class( 'module-Article_Item' ); ?>>
+                            <a href="<?php the_permalink(); ?>" class="module-Article_Item_Link">
                                 <div class="module-Article_Item_Img">
-                                    <img src="./assets/img/dummy-image.png" alt="" width="200" height="150" load="lazy">
+                                <?php if( has_post_thumbnail() ): ?>
+                                    <?php the_post_thumbnail( 'archive_thumbnail' ); ?>
+                                <?php else: ?>
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/dummy-image.png" alt="" width="200" height="150" load="lazy">
+                                <?php endif; ?>
                                 </div>
                                 <div class="module-Article_Item_Body">
-                                    <h2 class="module-Article_Item_Title">臨時休業のお知らせ</h2>
-                                    <p>いつもKuroneko Hairをご利用いただき、ありがとうございます。 誠に勝手ながら、防火設備点検のため下記期間を臨時休業とさせていただきます。 休業期間：2020年11月3日（火） ご不便をおかけいたしますが、何卒</p>
+                                    <h2 class="module-Article_Item_Title"><?php the_title(); ?></h2>
+                                    <?php the_excerpt(); ?>
                                     <ul class="module-Article_Item_Meta">
-                                        <li class="module-Article_Item_Cat">お知らせ</li>
-                                        <li class="module-Article_Item_Date"><time datetime="2020-10-23">2020年10月23日</time></li>
+                                        <?php
+                                            $neko_category_list = get_the_category();
+                                            if ( $neko_category_list ) :
+                                        ?>
+                                        <li class="module-Article_Item_Cat">
+                                            <?php echo esc_html( $neko_category_list[0]->name ); ?>
+                                        </li>
+                                        <?php endif; ?>
+                                        <li class="module-Article_Item_Date"><time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>"><?php echo get_the_date(); ?></time></li>
                                     </ul>
                                 </div>
                             </a>
                         </article>
-                        <article class="module-Article_Item">
-                            <a href="#" class="module-Article_Item_Link">
-                                <div class="module-Article_Item_Img">
-                                    <img src="./assets/img/sunflower-thumb.jpg" alt="" width="200" height="150" load="lazy">
-                                </div>
-                                <div class="module-Article_Item_Body">
-                                    <h2 class="module-Article_Item_Title">夏季休業のお知らせ</h2>
-                                    <p>いつもKuroneko Hairをご利用いただき、ありがとうございます。 誠に勝手ながら、当店は下記日程で夏季休業をいたします。皆様には大変ご迷惑をおかけいたしますが、何卒よろしくお願い申し上げます。 休業期間：2020</p>
-                                    <ul class="module-Article_Item_Meta">
-                                        <li class="module-Article_Item_Cat">お知らせ</li>
-                                        <li class="module-Article_Item_Date"><time datetime="2020-08-01">2020年8月1日</time></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="module-Article_Item">
-                            <a href="#" class="module-Article_Item_Link">
-                                <div class="module-Article_Item_Img">
-                                    <img src="./assets/img/magazine-thumb.jpg" alt="" width="200" height="150" load="lazy">
-                                </div>
-                                <div class="module-Article_Item_Body">
-                                    <h2 class="module-Article_Item_Title">雑誌に掲載されました</h2>
-                                    <p>現在発売中の雑誌「LOVE NEKO HAIR 7月号」に、当店スタイリストが担当したページが掲載されています。 当店でも大人気の「ミケのお手入れシリーズ」のヘアオイルを使った、お手軽スタイリングを解説しました。ぜひチェ</p>
-                                    <ul class="module-Article_Item_Meta">
-                                        <li class="module-Article_Item_Cat">お知らせ</li>
-                                        <li class="module-Article_Item_Date"><time datetime="2020-07-16">2020年7月16日</time></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="module-Article_Item">
-                            <a href="#" class="module-Article_Item_Link">
-                                <div class="module-Article_Item_Img">
-                                    <img src="./assets/img/dummy-image.png" alt="" width="200" height="150" load="lazy">
-                                </div>
-                                <div class="module-Article_Item_Body">
-                                    <h2 class="module-Article_Item_Title">臨時休業のお知らせ</h2>
-                                    <p>いつもKuroneko Hairをご利用いただき、ありがとうございます。 誠に勝手ながら、社内研修のため下記期間を臨時休業とさせていただきます。 休業期間：7月22日（水）〜23日（木） ご不便をおかけいたしますが、何卒</p>
-                                    <ul class="module-Article_Item_Meta">
-                                        <li class="module-Article_Item_Cat">お知らせ</li>
-                                        <li class="module-Article_Item_Date"><time datetime="2020-07-01">2020年7月1日</time></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="module-Article_Item">
-                            <a href="#" class="module-Article_Item_Link">
-                                <div class="module-Article_Item_Img">
-                                    <img src="./assets/img/sakura-thumb.jpg" alt="" width="200" height="150" load="lazy">
-                                </div>
-                                <div class="module-Article_Item_Body">
-                                    <h2 class="module-Article_Item_Title">スタッフが入りました</h2>
-                                    <p>4月1日より、Kuroneko Hairに新規スタッフが加わりました。 昨年まで、東京都内の美容室でトップスタイリストとして活躍していた清水です。 特に忙しい世代の短時間でスタイリングが決まる似合わせカットを得意としてい</p>
-                                    <ul class="module-Article_Item_Meta">
-                                        <li class="module-Article_Item_Cat">お知らせ</li>
-                                        <li class="module-Article_Item_Date"><time datetime="2020-04-01">2020年4月1日</time></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </article>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                         <nav class="navigation pagination" role="navigation" aria-label="投稿">
                             <div class="nav-links">
                                 <a class="prev page-numbers" href="#">&lt;<span class="sr-only">前</span></a>
