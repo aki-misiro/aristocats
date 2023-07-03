@@ -726,6 +726,8 @@ input[type="button"]::-webkit-search-decoration {
 
 .content-Wrap {
 	position: relative;
+	max-width: 1045px;
+	margin: 0 auto;
 }
 
 .container-fluid {
