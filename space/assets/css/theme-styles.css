@@ -1744,13 +1744,11 @@ ul.wp-block-social-links a {
 
 .home-Hero {
 	min-height: 50vh;
-	background-image: url(../img/pic_hero-default.jpg);
+	background-image: url(../img/pic_hero-default.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	position: relative;
-	margin-right: -15px;
-	margin-left: -15px;
 }
 
 .home-Hero_Inner {
