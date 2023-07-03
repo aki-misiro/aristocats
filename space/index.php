@@ -3,10 +3,6 @@
     <div class="container-fluid">
         <div class="home-Hero">
             <div class="home-Hero_Inner">
-                <p class="home-Hero_Txt">
-                    にゃんすけ店長がお迎えする<br>ゆったり癒しの美容室
-                    <span>20XX.XX DEMO OPEN</span>
-                </p>
             </div>
         </div>
         <section class="home-News">
