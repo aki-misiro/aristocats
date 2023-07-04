@@ -6,7 +6,7 @@
             </div>
         </div>
         <section class="home-News">
-            <h2 class="home-News_Title">お知らせ<span>News &amp; Topics</span></h2>
+            <h2 class="home-News_Title">投稿一覧</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <?php

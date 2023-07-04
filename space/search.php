@@ -16,8 +16,10 @@
                                 ?>
                                 <?php get_template_part( 'template-parts/loop', 'post' ); ?>
                             <?php endwhile; ?>
-                            <?php get_template_part( 'template-parts/parts', 'pagination' );
-                            ?>
+                            <?php get_template_part( 'template-parts/parts', 'pagination' ); ?>
+                        <?php else: ?>
+                            <p class="search-NoResult">検索単語に一致するものは見つかりませんでした。</p>
+                            <?php get_search_form(); ?>
                         <?php endif; ?>
                     </main>
                 </div>
