@@ -15,7 +15,7 @@
    <header role="banner" class="header">
       <h1 class="header-SiteName">
             <a href="<?php echo esc_url( home_url() ); ?>" class="header-SiteName_Link">
-               <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
+               <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/header-logo.svg" alt="<?php bloginfo( 'name' ); ?>">
             </a>
             <span class="header-Tagline"><?php bloginfo( 'description' ); ?></span>
       </h1>
