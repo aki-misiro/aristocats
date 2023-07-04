@@ -20,14 +20,7 @@
                                 <?php get_template_part( 'template-parts/loop', 'post' ); ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
-                        <?php 
-                            the_posts_pagination(
-                                array(
-                                    'prev_text' => '&lt;<span class="sr-only">前</span>',
-                                    'next_text' => '<span class="sr-only">次</span>&gt;',
-                                )
-                            );
-                        ?>
+                        <?php get_template_part( 'template-parts/parts', 'pagination' ); ?>
                     </main>
                 </div>
                 <?php get_sidebar(); ?>
