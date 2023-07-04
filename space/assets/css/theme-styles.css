@@ -726,6 +726,8 @@ input[type="button"]::-webkit-search-decoration {
 
 .content-Wrap {
 	position: relative;
+	max-width: 1045px;
+	margin: 0 auto;
 }
 
 .container-fluid {
@@ -738,12 +740,12 @@ input[type="button"]::-webkit-search-decoration {
 
 .header-SiteName {
 	margin-left: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 0;
 }
 
 .header-SiteName_Link {
 	display: block;
-	width: 150px;
+	width: 210px;
 	text-decoration: none;
 	color: #43413B;
 }
@@ -1743,7 +1745,7 @@ ul.wp-block-social-links a {
 }
 
 .home-Hero {
-	min-height: 50vh;
+	min-height: 35vh;
 	background-image: url(../img/pic_hero-default.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1794,7 +1796,6 @@ ul.wp-block-social-links a {
 .home-News,
 .home-Style,
 .home-ShopInfo {
-	padding-top: 60px;
 	padding-bottom: 60px;
 }
 

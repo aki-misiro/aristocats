@@ -4,7 +4,7 @@
                               <?php if( has_post_thumbnail() ): ?>
                                  <?php the_post_thumbnail( 'archive_thumbnail' ); ?>
                               <?php else: ?>
-                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/dummy-image.png" alt="" width="200" height="150" load="lazy">
+                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/dummy-image.svg" alt="" width="200" height="150" load="lazy">
                               <?php endif; ?>
                               </div>
                               <div class="module-Article_Item_Body">
