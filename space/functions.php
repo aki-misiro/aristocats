@@ -39,3 +39,26 @@ function neko_enqueue_scripts(){
    );
 }
 add_action( 'wp_enqueue_scripts', 'neko_enqueue_scripts' );
+
+function neko_widgets_init() {
+    register_sidebar(
+        array(
+            'name' => 'サイドバー',
+            'id' => 'sidebar-widget-area',
+            'description' => '投稿・固定ページのサイドバー',
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>',
+        )
+    );
+    register_sidebars(
+        3,
+        array(
+            'name' => 'フッター %d',
+            'id' => 'footer-widget-area',
+            'description' => 'フッターのサイドバー',
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>',
+        )
+    );
+}
+add_action( 'widgets_init', 'neko_widgets_init' );
