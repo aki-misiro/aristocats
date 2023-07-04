@@ -10,35 +10,30 @@
 </head>
 
 <body <?php body_class(); ?>>
-   <?php wp_body_open(); ?>
-   <div class="content-Wrap">
-      <header role="banner" class="header">
-         <h1 class="header-SiteName">
-               <a href="<?php echo esc_url( home_url() ); ?>" class="header-SiteName_Link">
-                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
-               </a>
-               <span class="header-Tagline"><?php bloginfo( 'description' ); ?></span>
-         </h1>
+<?php wp_body_open(); ?>
+<div class="content-Wrap">
+   <header role="banner" class="header">
+      <h1 class="header-SiteName">
+            <a href="<?php echo esc_url( home_url() ); ?>" class="header-SiteName_Link">
+               <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
+            </a>
+            <span class="header-Tagline"><?php bloginfo( 'description' ); ?></span>
+      </h1>
          <nav class="header-Nav">
-               <button type="button" class="header-NavToggle" aria-controls="global-Nav" aria-expanded="false" aria-label="メニュー開閉">
-                  <span class="header-NavToggle_Bar"></span>
-               </button>
-               <div class="header-Nav_Inner" id="global-Nav" aria-hidden="true">
-                  <?php
-                     wp_nav_menu(
-                        array(
-                           'theme_location' => 'main-menu',
-                           'menu_class' => 'header-Nav_Items',
-                           'container' => false,
-                        )
-                     );
-                  ?>
-                  <form role="search" method="get" class="search-form" action="#">
-                     <label>
-                           <input type="search" class="search-field" placeholder="検索 &hellip;" value="" name="s" />
-                     </label>
-                     <input type="submit" class="search-submit" value="検索" />
-                  </form>
-               </div>
+            <button type="button" class="header-NavToggle" aria-controls="global-Nav" aria-expanded="false" aria-label="メニュー開閉">
+               <span class="header-NavToggle_Bar"></span>
+            </button>
+            <div class="header-Nav_Inner" id="global-Nav" aria-hidden="true">
+               <div style="text-align: right"><?php get_search_form(); ?></div>
+               <?php
+                  wp_nav_menu(
+                     array(
+                        'theme_location' => 'main-menu',
+                        'menu_class' => 'header-Nav_Items',
+                        'container' => false,
+                     )
+                  );
+               ?>
+            </div>
          </nav>
-      </header>
+   </header>

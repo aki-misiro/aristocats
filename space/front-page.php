@@ -9,13 +9,23 @@
             <h2 class="home-News_Title">お知らせ<span>News &amp; Topics</span></h2>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                <?php if( have_posts() ) :?>
                     <?php
-                        while ( have_posts() ) :
-                            the_post();
+                    $neko_args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 3,
+                    );
+                    $neko_news_query = new WP_Query( $neko_args );
+                    if ( $neko_news_query->have_posts() ) :
+                        ?>
+                        <?php
+                        while ( $neko_news_query->have_posts() ) :
+                            $neko_news_query->the_post();
                             ?>
                             <?php get_template_part( 'template-parts/loop', 'post' ); ?>
-                        <?php endwhile; ?>
+                            <?php
+                        endwhile;
+                        wp_reset_postdata();
+                        ?>
                     <?php endif; ?>
                 </div>
             </div>
