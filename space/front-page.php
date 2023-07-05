@@ -30,7 +30,7 @@
                 </div>
             </div>
             <p class="home-News_More">
-                <a href="#" class="home-News_More_Link">もっと見る</a>
+                <a href="https://aristocats.space/list/" class="home-News_More_Link">もっと見る</a>
             </p>
         </section>
     </div>
