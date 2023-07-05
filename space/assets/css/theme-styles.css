@@ -804,12 +804,14 @@ input[type="button"]::-webkit-search-decoration {
 
 .header-NavToggle[aria-expanded="true"] .header-NavToggle_Bar:before {
 	transform: translateY(0) rotate(45deg);
-	background-color: #43413B;
+	background-color: #F7F6F5;
+	height: 3px;
 }
 
 .header-NavToggle[aria-expanded="true"] .header-NavToggle_Bar:after {
-	transform: translateY(-2px) rotate(-45deg);
-	background-color: #43413B;
+	transform: translateY(-3px) rotate(-45deg);
+	background-color: #F7F6F5;
+	height: 3px;
 }
 
 body {
@@ -1218,6 +1220,7 @@ ol.content-CommentsList {
 .widget_block h4,
 .widget_block h5,
 .widget_block h6 {
+	margin-top: 30px;
 	margin-bottom: 1em;
 	padding-top: .5em;
 	border-top: 2px solid #f9dfd4;
@@ -1804,7 +1807,7 @@ ul.wp-block-social-links a {
 .home-ShopInfo_Title {
 	text-align: center;
 	font-size: 1.5rem;
-	margin-bottom: 45px;
+	margin-bottom: 20px;
 }
 
 .home-News_Title span,
@@ -1836,9 +1839,7 @@ ul.wp-block-social-links a {
 	max-width: 20em;
 }
 
-.home-News_More_Link:hover,
-.home-News_More_Link:focus,
-.home-News_More_Link:visited {
+.home-News_More_Link:hover {
 	background-color: #6d3c29;
 	color: #FFFFFF;
 }
